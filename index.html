@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrillos Services</title>
+  <link rel="stylesheet" href="canvas.css" />
+</head>
+<body>
+  <header>
+    <h1 id="title">Carrillos Services</h1>
+    <p id="subtitle">Landscaping & Junkyard Removal</p>
+    <button id="languageToggle">Español</button>
+  </header>
+
+  <section id="services">
+    <h2 id="servicesTitle">Our Services</h2>
+
+    <div class="service">
+      <h3 id="landscapingTitle">🌳 Landscaping</h3>
+      <p id="landscapingDesc">We design, maintain, and beautify your outdoor spaces.</p>
+    </div>
+
+    <div class="service">
+      <h3 id="junkTitle">🗑️ Junk Removal</h3>
+      <p id="junkDesc">Fast and eco-friendly removal of unwanted materials.</p>
+    </div>
+
+    <div class="service">
+      <h3 id="evictionTitle">🚪 Evictions & Trash Outs</h3>
+      <p id="evictionDesc">We help clear properties quickly and professionally.</p>
+    </div>
+
+    <div class="service">
+      <h3 id="dumpsterTitle">🛻 Dumpster Rentals</h3>
+      <p id="dumpsterDesc">Affordable dumpster rental for residential and commercial use.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 id="contactTitle">Contact Us</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" id="submitBtn">Send</button>
+    </form>
+
+    <div class="cta">
+      <p id="ctaText">Prefer email? Reach out directly:</p>
+      <a
+        id="emailBtn"
+        href="mailto:carrillosservices2025@gmail.com?subject=Service Inquiry&body=Hi, I'm interested in your services..."
+        class="emailBtn"
+      >
+        📧 Email Us
+      </a>
+    </div>
+
+    <div class="infoBox">
+      <h3 id="availabilityTitle">📅 Availability</h3>
+      <p id="availabilityDesc">We’re available 7 days a week — email or text anytime.</p>
+
+      <h3 id="depositTitle">💵 Damage Deposit</h3>
+      <p id="depositDesc">$100 deposit required for all jobs. Accepted via Cash App or Zelle.</p>
+
+      <h3 id="paymentTitle">📱 Payment Info</h3>
+      <ul>
+        <li id="cashapp">Cash App: <strong>$CarrillosServices</strong></li>
+        <li id="zelle">Zelle: <strong>carrillosservices2025@gmail.com</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <canvas id="backgroundCanvas"></canvas>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
