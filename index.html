@@ -5,76 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carrillos Services</title>
   <link rel="stylesheet" href="canvas.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1 id="title">Carrillos Services</h1>
-    <p id="subtitle">Landscaping & Junkyard Removal</p>
-    <button id="languageToggle">Español</button>
-  </header>
+<header>
+  <h1 class="title">Carrillos Services</h1>
+  <p id="subtitle" class="sub-gradient">Landscaping & Junkyard Removal</p>
+  <button id="languageToggle">Español</button>
+</header>
 
-  <section id="services">
-    <h2 id="servicesTitle">Our Services</h2>
+<section id="services">
+  <h2 id="servicesTitle">Our Services</h2>
 
-    <div class="service">
-      <h3 id="landscapingTitle">🌳 Landscaping</h3>
-      <p id="landscapingDesc">We design, maintain, and beautify your outdoor spaces.</p>
-    </div>
+  <div class="box-green">
+    <h3 id="landscapingTitle">🌳 Landscaping</h3>
+    <p id="landscapingDesc">We design, maintain, and beautify your outdoor spaces.</p>
+  </div>
 
-    <div class="service">
-      <h3 id="junkTitle">🗑️ Junk Removal</h3>
-      <p id="junkDesc">Fast and eco-friendly removal of unwanted materials.</p>
-    </div>
+  <div class="box-green">
+    <h3 id="junkTitle">🗑️ Junk Removal</h3>
+    <p id="junkDesc">Fast and eco-friendly removal of unwanted materials.</p>
+  </div>
 
-    <div class="service">
-      <h3 id="evictionTitle">🚪 Evictions & Trash Outs</h3>
-      <p id="evictionDesc">We help clear properties quickly and professionally.</p>
-    </div>
+  <div class="box-green">
+    <h3 id="evictionTitle">🚪 Evictions & Trash Outs</h3>
+    <p id="evictionDesc">We help clear properties quickly and professionally.</p>
+  </div>
 
-    <div class="service">
-      <h3 id="dumpsterTitle">🛻 Dumpster Rentals</h3>
-      <p id="dumpsterDesc">Affordable dumpster rental for residential and commercial use.</p>
-    </div>
-  </section>
+  <div class="box-green">
+    <h3 id="dumpsterTitle">🛻 Dumpster Rentals</h3>
+    <p id="dumpsterDesc">Affordable dumpster rental for residential and commercial use.</p>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2 id="contactTitle">Contact Us</h2>
 
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit" id="submitBtn">Send</button>
-    </form>
+<section id="contact">
+  <h2 id="contactTitle">Contact Us</h2>
 
-    <div class="cta">
-      <p id="ctaText">Prefer email? Reach out directly:</p>
-      <a
-        id="emailBtn"
-        href="mailto:carrillosservices2025@gmail.com?subject=Service Inquiry&body=Hi, I'm interested in your services..."
-        class="emailBtn"
-      >
-        📧 Email Us
-      </a>
-    </div>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit" id="submitBtn">Send</button>
+  </form>
 
-    <div class="infoBox">
-      <h3 id="availabilityTitle">📅 Availability</h3>
-      <p id="availabilityDesc">We’re available 7 days a week — email or text anytime.</p>
+  <div class="cta">
+    <p id="ctaText">Prefer email? Reach out directly:</p>
+    <a
+      id="emailBtn"
+      href="mailto:carrillosservices2025@gmail.com?subject=Service Inquiry&body=Hi, I'm interested in your services..."
+      class="emailBtn"
+    >
+      📧 Email Us
+    </a>
+  </div>
 
-      <h3 id="depositTitle">💵 Damage Deposit</h3>
-      <p id="depositDesc">$100 deposit required for all jobs. Accepted via Cash App or Zelle.</p>
+<div class="box-accent">
+  <h2>📅 Availability</h2>
+  <p>We’re available 7 days a week — email or text anytime.</p>
 
-      <h3 id="paymentTitle">📱 Payment Info</h3>
-      <ul>
-        <li id="cashapp">Cash App: <strong>$CarrillosServices</strong></li>
-        <li id="zelle">Zelle: <strong>carrillosservices2025@gmail.com</strong></li>
-      </ul>
-    </div>
-  </section>
+  <h2>💵 Damage Deposit</h2>
+  <p>$100 deposit required for all jobs. Accepted via Cash App or Zelle.</p>
 
-  <canvas id="backgroundCanvas"></canvas>
+  <h2>📱 Payment Info</h2>
+  <ul>
+    <li><strong>Cash App:</strong> $CarrillosServices</li>
+    <li><strong>Zelle:</strong> carrillosservices2025@gmail.com</li>
+  </ul>
+</div>
 
-  <script src="javascript.js"></script>
+</section>
+<p class="sub-gradient" style="font-size: 1.4rem;">
+  <i class="fas fa-handshake" style="color:#333;"></i>
+  Built on Trust • 
+  <i class="fas fa-heart" style="color:#e53935;"></i>
+  Powered by Family
+</p>
+
+<div class="cta box-green">
+  <p id="ctaText" class="sub-gradient">👨‍👩‍👧‍👦 Family-Owned & Operated</p>
+  <p>We’re proud to be a small, family-run business serving our community with care, honesty, and hard work. Every job we take on is personal — because your trust means everything to us.</p>
+</div>
+
+
+<canvas id="backgroundCanvas"></canvas>
+
+<script src="javascript.js"></script>
 </body>
 </html>
