@@ -57,16 +57,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/* Neutralized .service so it doesn't conflict with box styles */
 .service {
-  background-color: white;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  border-left: 5px solid #4CAF50;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.service h3 {
-  margin-top: 0;
 }
 
 /* 📬 Contact Form */
@@ -183,4 +177,48 @@ canvas#backgroundCanvas {
   .infoBox {
     padding: 1rem;
   }
+}
+
+/* 🖤 Sleek Black Gradient Text */
+.sub-gradient {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #000000, #333333, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+/* 🎁 Custom Box Styles */
+.box-accent {
+  background-color: #ffffff;
+  border-left: 6px solid #4CAF50;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.box-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.box-green {
+  background: linear-gradient(135deg, #4CAF50, #81C784);
+  color: #000000; /* Changed from white to black */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.sub-gradient i {
+  margin-right: 6px;
+  font-size: 1.2rem;
 }
