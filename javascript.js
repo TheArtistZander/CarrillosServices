@@ -41,16 +41,20 @@ animate();
 const translations = {
   en: {
     title: "Carrillos Services",
+    titleHeader: "Carrillos Services",
     subtitle: "Landscaping & Junkyard Removal",
     servicesTitle: "Our Services",
     landscapingTitle: "🌳 Landscaping",
     landscapingDesc: "We design, maintain, and beautify your outdoor spaces.",
+    landscapeGalleryTitle: "🌿 Landscaping Projects",
     junkTitle: "🗑️ Junk Removal",
     junkDesc: "Fast and eco-friendly removal of unwanted materials.",
+    junkGalleryTitle: "🗑️ Junk Removal in Action",
     evictionTitle: "🚪 Evictions & Trash Outs",
     evictionDesc: "We help clear properties quickly and professionally.",
     dumpsterTitle: "🛻 Dumpster Rentals",
     dumpsterDesc: "Affordable dumpster rental for residential and commercial use.",
+    galleryTitle: "🚛 Our Truck",
     contactTitle: "Contact Us",
     submitBtn: "Send",
     ctaText: "Prefer email? Reach out directly:",
@@ -61,20 +65,27 @@ const translations = {
     depositDesc: "$100 deposit required for all jobs. Accepted via Cash App or Zelle.",
     paymentTitle: "📱 Payment Info",
     cashapp: "Cash App: $CarrillosServices",
-    zelle: "Zelle: carrillosservices2025@gmail.com"
+    zelle: "Zelle: carrillosservices2025@gmail.com",
+    footerMessage: "🤝 Built on Trust • ❤️ Powered by Family",
+    familyOwned: "👨‍👩‍👧‍👦 Family-Owned & Operated",
+    familyDesc: "We’re proud to be a small, family-run business serving our community with care, honesty, and hard work. Every job we take on is personal — because your trust means everything to us."
   },
   es: {
     title: "Servicios Carrillos",
+    titleHeader: "Servicios Carrillos",
     subtitle: "Paisajismo y Remoción de Basura",
     servicesTitle: "Nuestros Servicios",
     landscapingTitle: "🌳 Paisajismo",
     landscapingDesc: "Diseñamos, mantenemos y embellecemos sus espacios exteriores.",
+    landscapeGalleryTitle: "🌿 Proyectos de Paisajismo",
     junkTitle: "🗑️ Remoción de Basura",
     junkDesc: "Remoción rápida y ecológica de materiales no deseados.",
+    junkGalleryTitle: "🗑️ Remoción de Basura en Acción",
     evictionTitle: "🚪 Desalojos y Limpiezas",
     evictionDesc: "Ayudamos a limpiar propiedades de manera rápida y profesional.",
     dumpsterTitle: "🛻 Alquiler de Contenedores",
     dumpsterDesc: "Alquiler asequible de contenedores para uso residencial y comercial.",
+    galleryTitle: "🚛 Nuestro Camión",
     contactTitle: "Contáctenos",
     submitBtn: "Enviar",
     ctaText: "¿Prefiere correo electrónico? Contáctenos directamente:",
@@ -85,20 +96,30 @@ const translations = {
     depositDesc: "Se requiere un depósito de $100 para todos los trabajos. Se acepta por Cash App o Zelle.",
     paymentTitle: "📱 Información de Pago",
     cashapp: "Cash App: $CarrillosServices",
-    zelle: "Zelle: carrillosservices2025@gmail.com"
+    zelle: "Zelle: carrillosservices2025@gmail.com",
+    footerMessage: "🤝 Basado en la Confianza • ❤️ Impulsado por la Familia",
+    familyOwned: "👨‍👩‍👧‍👦 Empresa Familiar",
+    familyDesc: "Nos enorgullece ser una empresa familiar que sirve a nuestra comunidad con cuidado, honestidad y trabajo duro. Cada trabajo que realizamos es personal — porque su confianza lo es todo para nosotros."
   }
 };
 
-let currentLang = "en";
+// Load saved language preference
+let currentLang = localStorage.getItem("lang") || "en";
+
+function applyTranslations(lang) {
+  const t = translations[lang];
+  for (const key in t) {
+    const el = document.getElementById(key);
+    if (el && t[key]) el.textContent = t[key];
+  }
+  document.getElementById("languageToggle").textContent = lang === "en" ? "Español" : "English";
+  localStorage.setItem("lang", lang);
+}
 
 document.getElementById("languageToggle").addEventListener("click", () => {
   currentLang = currentLang === "en" ? "es" : "en";
-  const t = translations[currentLang];
-
-  for (const key in t) {
-    const el = document.getElementById(key);
-    if (el) el.textContent = t[key];
-  }
-
-  document.getElementById("languageToggle").textContent = currentLang === "en" ? "Español" : "English";
+  applyTranslations(currentLang);
 });
+
+// Apply on page load
+applyTranslations(currentLang);
