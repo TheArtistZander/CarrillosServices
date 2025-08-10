@@ -222,3 +222,33 @@ canvas#backgroundCanvas {
   margin-right: 6px;
   font-size: 1.2rem;
 }
+/* 🚛 Truck Gallery */
+#gallery {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+#galleryTitle {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
