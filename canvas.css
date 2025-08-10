@@ -252,3 +252,11 @@ canvas#backgroundCanvas {
 .gallery-grid img:hover {
   transform: scale(1.03);
 }
+#landscapeGallery {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background-color: #f0fff0; /* soft green tint */
+  border-radius: 12px;
+}
+
