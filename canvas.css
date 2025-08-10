@@ -1,4 +1,8 @@
 /* 🌿 Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -8,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+/* 🌱 Header */
 header {
   background-color: #4CAF50;
   color: white;
@@ -45,22 +50,21 @@ header p {
   background-color: #e6ffe6;
 }
 
+#languageToggle:focus {
+  outline: 2px solid #81C784;
+  outline-offset: 2px;
+}
+
 /* 🧱 Section Styles */
 section {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 
 h2 {
   color: #4CAF50;
   margin-bottom: 1rem;
-}
-
-/* Neutralized .service so it doesn't conflict with box styles */
-.service {
-  padding: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 /* 📬 Contact Form */
@@ -93,6 +97,11 @@ button[type="submit"]:hover {
   background-color: #45a049;
 }
 
+button[type="submit"]:focus {
+  outline: 2px solid #81C784;
+  outline-offset: 2px;
+}
+
 /* 📧 Email CTA */
 .cta {
   text-align: center;
@@ -119,13 +128,19 @@ button[type="submit"]:hover {
   background-color: #45a049;
 }
 
+.emailBtn:focus {
+  outline: 2px solid #81C784;
+  outline-offset: 2px;
+}
+
 /* 💳 Payment Info Box */
-.infoBox {
+.infoBox, .box-accent {
   background-color: white;
   padding: 1.5rem;
   margin-top: 2rem;
   border-left: 5px solid #4CAF50;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
 .infoBox h3 {
@@ -190,38 +205,42 @@ canvas#backgroundCanvas {
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
+.sub-gradient i {
+  margin-right: 6px;
+  font-size: 1.2rem;
+}
+
 /* 🎁 Custom Box Styles */
-.box-accent {
-  background-color: #ffffff;
-  border-left: 6px solid #4CAF50;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.box-glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(8px);
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  margin-bottom: 2rem;
-}
-
 .box-green {
   background: linear-gradient(135deg, #4CAF50, #81C784);
-  color: #000000; /* Changed from white to black */
+  color: #000000;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
 }
 
-.sub-gradient i {
-  margin-right: 6px;
-  font-size: 1.2rem;
+/* 🖼️ Gallery Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.3);
+}
+
 /* 🚛 Truck Gallery */
 #gallery {
   padding: 2rem;
@@ -235,28 +254,40 @@ canvas#backgroundCanvas {
   margin-bottom: 1.5rem;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.03);
-}
+/* 🌿 Landscaping Gallery */
 #landscapeGallery {
   padding: 2rem;
   max-width: 900px;
   margin: auto;
-  background-color: #f0fff0; /* soft green tint */
+  background-color: #f0fff0;
   border-radius: 12px;
 }
 
+#landscapeGalleryTitle {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* 🗑️ Junk Removal Gallery */
+#junkGallery {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff8f0;
+  border-radius: 12px;
+}
+
+#junkGalleryTitle {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* 🦶 Footer (Optional) */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e8f5e9;
+  font-size: 1rem;
+}
