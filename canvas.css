@@ -291,3 +291,17 @@ footer {
   background-color: #e8f5e9;
   font-size: 1rem;
 }
+.callBtn {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 16px;
+  margin: 6px 0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+.callBtn:hover {
+  background-color: #1b5e20;
+}
+
