@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.carrillosservices.com/carrillosservices.xml
+Sitemap: https://www.carrillosservices.com/sitemap.xml
