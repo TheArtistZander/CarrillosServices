@@ -129,3 +129,22 @@ document.getElementById("languageToggle").addEventListener("click", () => {
 
 // Apply on page load
 applyTranslations(currentLang);
+
+window.addEventListener('load', () => {
+  const popup = document.getElementById('sloganPopup');
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Show popup after 2 seconds
+  setTimeout(() => {
+    popup.style.visibility = 'visible';
+    popup.style.opacity = '1';
+  }, 2000);
+
+  // Close popup
+  closeBtn.addEventListener('click', () => {
+    popup.style.opacity = '0';
+    setTimeout(() => {
+      popup.style.visibility = 'hidden';
+    }, 300);
+  });
+});
