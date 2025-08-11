@@ -68,7 +68,7 @@ const translations = {
     depositDesc: "$100 deposit required for all jobs. Accepted via Cash App or Zelle.",
     paymentTitle: "📱 Payment Info",
     cashapp: "Cash App: $CarrillosServices",
-    zelle: "Zelle: carrillosservices2025@gmail.com",
+    zelle: "Zelle: 763-204-3642",
     footerMessage: "🤝 Built on Trust • ❤️ Powered by Family",
     familyOwned: "👨‍👩‍👧‍👦 Family-Owned & Operated",
     familyDesc: "We’re proud to be a small, family-run business serving our community with care, honesty, and hard work. Every job we take on is personal — because your trust means everything to us."
@@ -102,7 +102,7 @@ const translations = {
     depositDesc: "Se requiere un depósito de $100 para todos los trabajos. Se acepta por Cash App o Zelle.",
     paymentTitle: "📱 Información de Pago",
     cashapp: "Cash App: $CarrillosServices",
-    zelle: "Zelle: carrillosservices2025@gmail.com",
+    zelle: "Zelle: 763-204-3642",
     footerMessage: "🤝 Basado en la Confianza • ❤️ Impulsado por la Familia",
     familyOwned: "👨‍👩‍👧‍👦 Empresa Familiar",
     familyDesc: "Nos enorgullece ser una empresa familiar que sirve a nuestra comunidad con cuidado, honestidad y trabajo duro. Cada trabajo que realizamos es personal — porque su confianza lo es todo para nosotros."
