@@ -353,3 +353,39 @@ footer {
 #familyDesc {
   text-align: center;
 }
+/* 🌐 Top Navigation Styling */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.instaBtn {
+  background-color: #e1306c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.instaBtn:hover {
+  background-color: #c72c5d;
+}
