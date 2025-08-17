@@ -389,3 +389,20 @@ footer {
 .instaBtn:hover {
   background-color: #c72c5d;
 }
+  
+.insta-button {
+  display: inline-block;
+  background-color: #e1306c; /* Instagram pink */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.insta-button:hover {
+  background-color: #c72c5d;
+  transform: translateY(-2px);
+}
