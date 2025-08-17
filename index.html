@@ -43,34 +43,49 @@
 }
 </script>
   <script>
-    /* 🖼️ Service Logos Styling */
+   /* 🎉 Birthday Card Style Logos */
 #serviceLogos {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
-  background-color: #f5f5f5;
+  padding: 2rem 1rem;
+  background-color: #fff;
 }
 
-.logo-container {
+.logo-card {
   display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
-.service-logo {
-  max-width: 100%;
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+}
+
+.logo-box img {
+  width: 100%;
   height: auto;
-  width: 300px;
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.service-logo:hover {
-  transform: scale(1.05);
+.logo-caption {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2e7d32;
+  text-align: center;
 }
+
   </script>
 <link rel="canonical" href="https://www.carrillosservices.com/" />
 </head>
@@ -81,13 +96,20 @@
   <button id="languageToggle">Español</button>
 </header>
   
-<!-- 🖼️ Service Logos Section -->
+<!-- 🎉 Service Logos Card Layout -->
 <section id="serviceLogos">
-  <div class="logo-container">
-    <img src="service1.png" alt="Junk Removal Logo" class="service-logo" />
-    <img src="service2.png" alt="Landscape Services Logo" class="service-logo" />
+  <div class="logo-card">
+    <div class="logo-box">
+      <img src="service1.png" alt="Junk Removal Logo" />
+      <p class="logo-caption">Junk Removal</p>
+    </div>
+    <div class="logo-box">
+      <img src="service2.png" alt="Landscape Services Logo" />
+      <p class="logo-caption">Landscaping</p>
+    </div>
   </div>
 </section>
+
 
 <!-- 🌿 Services Section -->
 <section id="services">
