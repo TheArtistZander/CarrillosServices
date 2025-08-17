@@ -12,11 +12,57 @@
   <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="canvas.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="canonical" href="https://www.carrillosservices.com/" />
+
+  <!-- 🎨 Logo Card Styles -->
+  <style>
+    #serviceLogos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      background-color: #fff;
+    }
+
+    .logo-card {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .logo-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 280px;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo-caption {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2e7d32;
+      text-align: center;
+    }
+  </style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Carrillo's Services",
+  "name": "Carrillos Services",
   "image": "https://www.carrillosservices.com/images/logo.png",
   "url": "https://www.carrillosservices.com",
   "telephone": "+1-763-204-3642",
@@ -33,83 +79,98 @@
     "latitude": 45.0596,
     "longitude": -93.3563
   },
-  "openingHours": "Mo-Fr 08:00-18:00",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
   "priceRange": "$$",
+  "description": "Carrillos Services is a family-owned business offering expert junk removal and landscaping services across the Twin Cities Metro area. Trusted, professional, and available 7 days a week.",
   "sameAs": [
     "https://www.facebook.com/carrillosservices",
     "https://www.instagram.com/carrillosservices"
   ],
-  "description": "Carrillo's Services provides professional landscaping, lawn care, and home improvement solutions in Brooklyn Park, Minnesota and surrounding areas."
+  "logo": "https://www.carrillosservices.com/images/logo.png",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Carrillos Services Offerings",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Junk Removal",
+          "description": "Fast and eco-friendly removal of unwanted materials including furniture, yard waste, and construction debris."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Landscaping",
+          "description": "Professional landscaping services including design, maintenance, mulch installation, and seasonal cleanups."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Evictions & Trash Outs",
+          "description": "Quick and professional property clearing for evictions and foreclosures."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dumpster Rentals",
+          "description": "Affordable dumpster rental for residential and commercial use."
+        }
+      }
+    ]
+  }
 }
 </script>
-  <script>
-   /* 🎉 Birthday Card Style Logos */
-#serviceLogos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 1rem;
-  background-color: #fff;
-}
 
-.logo-card {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  background: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.logo-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 280px;
-}
-
-.logo-box img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.logo-caption {
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #2e7d32;
-  text-align: center;
-}
-
-  </script>
-<link rel="canonical" href="https://www.carrillosservices.com/" />
 </head>
 <body>
-<header>
-  <h1 class="title" id="titleHeader">Carrillos Services</h1>
-  <p id="subtitle" class="sub-gradient">Landscaping & Junkyard Removal</p>
-  <button id="languageToggle">Español</button>
-</header>
-  
-<!-- 🎉 Service Logos Card Layout -->
-<section id="serviceLogos">
-  <div class="logo-card">
-    <div class="logo-box">
-      <img src="service1.png" alt="Junk Removal Logo" />
-      <p class="logo-caption">Junk Removal</p>
-    </div>
-    <div class="logo-box">
-      <img src="service2.png" alt="Landscape Services Logo" />
-      <p class="logo-caption">Landscaping</p>
-    </div>
-  </div>
-</section>
+  <header>
+    <h1 class="title" id="titleHeader">Carrillos Services</h1>
+    <p id="subtitle" class="sub-gradient">Landscaping & Junkyard Removal</p>
+    <button id="languageToggle">Español</button>
+  </header>
 
+  <!-- 🎉 Service Logos Card Layout -->
+  <section id="serviceLogos">
+    <div class="logo-card">
+      <div class="logo-box">
+        <img src="images/service1.png" alt="Junk Removal Logo" />
+        <p class="logo-caption">Junk Removal</p>
+      </div>
+      <div class="logo-box">
+        <img src="images/service2.png" alt="Landscape Services Logo" />
+        <p class="logo-caption">Landscaping</p>
+      </div>
+    </div>
+  </section>
 
 <!-- 🌿 Services Section -->
 <section id="services">
